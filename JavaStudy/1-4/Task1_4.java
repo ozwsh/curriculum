@@ -13,8 +13,8 @@ public class Task1_4 {
 
     // 定数（アカウント情報）
     // ① 登録されている名前（USER_NAME）とパスワード（USER_PASSWORD）を定数で定義してください。
-    private static final String USER_NAME = "ozawa";
-    private static final String USER_PASSWORD = "1234";
+    private static final String USER_NAME = "alice";
+    private static final String USER_PASSWORD = "alice123";
 
     // 定数（メッセージ）
     private static final String CONST_MSG_SUCCESS = "ログイン成功です。";
@@ -39,19 +39,19 @@ public class Task1_4 {
 
         // ② 「name」の値が「USER_NAME」と等しく、「 pass 」の値が「USER_PASSWORD」と等しい場合。
         //      定数を使用して「 ログイン成功です 」と出力してください。
-        if (name.equals("USER_NAME") && pass.equals("USER_PASSWORD") ) {
+        if (name.equals(USER_NAME) && pass.equals(USER_PASSWORD) ) {
             System.out.println(CONST_MSG_SUCCESS); 
         }
 
         // ③ 「USER_RNAME」の値のみ等しい場合。
        //     定数を使用して「 パスワードに誤りがあります。 」 と出力してください。
-       else if (name.equals("USER_NAME")) {
+       else if (name.equals(USER_NAME)) {
         System.out.println(CONST_MSG_ERROR_PASS); 
     }
 
         // ④ 「USER_PASSWORD」の値のみ等しい場合。
        //定数を使用して「 名前に誤りがあります。 」と出力してください。
-       else if (pass.equals("USER_PASSWORD")) {
+       else if (pass.equals(USER_PASSWORD)) {
         System.out.println(CONST_MSG_ERROR_NAME); 
     }
 
@@ -60,6 +60,7 @@ public class Task1_4 {
        else {
         System.out.println(CONST_MSG_ERROR_INPUT); 
     }
+
     }
 
 }
